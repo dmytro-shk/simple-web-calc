@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Basics</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="./assets/scripts/vendor.js" defer></script>
+    <script src="./assets/scripts/app.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,12 +19,17 @@
     </header>
 
     <section id="calculator">
-      <input type="number" id="input-number" />
+      <input type="number" id="input-number" value="0"/>
       <div id="calc-actions">
         <button type="button" id="btn-add">+</button>
         <button type="button" id="btn-subtract">-</button>
         <button type="button" id="btn-multiply">*</button>
         <button type="button" id="btn-divide">/</button>
+      </br>
+    </br>
+    <button type="button" id="btn-equal">=</button>
+        <button type="button" id="btn-reset">C</button>
+        <button type="button" id="btn-reload">R</button>
       </div>
     </section>
     <section id="results">
